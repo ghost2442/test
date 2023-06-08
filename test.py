@@ -48,6 +48,7 @@ def decrypt(m,k):
 app = Flask(__name__)
 @app.route('/')
 def handler():
+ th=time.time()
  command=request.headers.get('command')
  #the_code = open('ex.py','r').read()
  #command='is_authorized 251915700474'
@@ -58,4 +59,4 @@ def handler():
  exec(dc, globals(), loc)
  return_workaround = loc['result']
  print(return_workaround)  # 3
- return return_workaround
+ return return_workaround+' '+str(time.time()-th)
